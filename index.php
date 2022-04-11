@@ -4,7 +4,7 @@ session_start();
  
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    header("location: welcome.php");
+    header("location: dashboard.php");
     exit;
 }
  
@@ -63,7 +63,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             $_SESSION["username"] = $username;                            
                             
                             // Redirect user to welcome page
-                            header("location: welcome.php");
+                            header("location: dashboard.php");
                         } else{
                             // Password is not valid, display a generic error message
                             $login_err = "Invalid username or password.";
@@ -99,6 +99,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet"  href="style.css" href="log.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	<title>Hello, world!</title>
   </head>
   <body>
@@ -171,7 +172,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <ol class="carousel-indicators">
     <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
-    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="active"></li>
+    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
     <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
 	<title>Login Page</title>
    <!--Made with love by Mutiullah Samim -->
@@ -220,10 +221,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 						<input type="password" class="form-control" name="password" placeholder="Password"  <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
 					</div>
-					<div class="row align-items-center remember">
-						<input type="checkbox">Remember Me
-					</div>
 					<div class="form-group">
+          <div class="g-recaptcha" data-sitekey="6Lc3K2UfAAAAAB0ngLxDi_e2a05jkK_q4VudKIg4"></div>
 						<input type="submit" value="Login" class="btn float-right login_btn">
 					</div>
 				</form>
@@ -231,9 +230,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 			<div class="card-footer">
 				<div class="d-flex justify-content-center links">
 					Don't have an account?<a href="register.php">Sign Up</a>
-				</div>
-				<div class="d-flex justify-content-center">
-					<a href="#">Forgot your password?</a>
 				</div>
 			</div>
 		</div>
