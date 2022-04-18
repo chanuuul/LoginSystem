@@ -11,7 +11,7 @@
     />
     <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Frontendfunn - Bootstrap 5 Admin Dashboard Template</title>
+    <titleAdmission Management System S</title>
   </head>
   <body>
     <!-- top navigation bar -->
@@ -29,7 +29,7 @@
         <a
           class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold"
           href="#"
-          >Frontendfunn</a
+          >Admission Admin</a
         >
         <button
           class="navbar-toggler"
@@ -173,7 +173,7 @@
         <div class="row">
           <div class="col-md-3 mb-3">
             <div class="card bg-primary text-white h-100">
-              <div class="card-body py-5">Primary Card</div>
+              <div class="card-body py-5">Computer Studies Examination</div>
               <div class="card-footer d-flex">
                 View Details
                 <span class="ms-auto">
@@ -184,7 +184,7 @@
           </div>
           <div class="col-md-3 mb-3">
             <div class="card bg-warning text-dark h-100">
-              <div class="card-body py-5">Warning Card</div>
+              <div class="card-body py-5">Education Studies Examination</div>
               <div class="card-footer d-flex">
                 View Details
                 <span class="ms-auto">
@@ -195,7 +195,7 @@
           </div>
           <div class="col-md-3 mb-3">
             <div class="card bg-success text-white h-100">
-              <div class="card-body py-5">Success Card</div>
+              <div class="card-body py-5">Manangement and Psychology Examination</div>
               <div class="card-footer d-flex">
                 View Details
                 <span class="ms-auto">
@@ -206,7 +206,7 @@
           </div>
           <div class="col-md-3 mb-3">
             <div class="card bg-danger text-white h-100">
-              <div class="card-body py-5">Danger Card</div>
+              <div class="card-body py-5">Result</div>
               <div class="card-footer d-flex">
                 View Details
                 <span class="ms-auto">
@@ -260,7 +260,7 @@
                         <th>Office</th>
                         <th>Age</th>
                         <th>Start date</th>
-                        <th>Salary</th>
+                        <th>Tuition</th>
                       </tr>
                     </thead>
                     <tbody>

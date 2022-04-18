@@ -172,7 +172,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <ol class="carousel-indicators">
     <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
-    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="active"></li>
     <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
 	<title>Login Page</title>
    <!--Made with love by Mutiullah Samim -->
@@ -238,8 +238,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://stcbauan.com/wp-content/uploads/2019/11/stc-facade1.jpg" class="d-block w-100" alt="...">
+      <img src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t31.18172-8/14711150_1137277066355657_6242751703330642777_o.jpg?_nc_cat=106&ccb=1-5&_nc_sid=19026a&_nc_eui2=AeFKZXw1E9UYvSg-SzK58WO0WkPDOcmpBsxaQ8M5yakGzFuo-zGTBfbWo-GfNXPBjE17TRKKDz3ZLnxQIB6gsGRE&_nc_ohc=Rao5LHCPOwMAX__Z3M2&_nc_ht=scontent.fmnl30-1.fna&oh=00_AT-qzyHUaPfV4o7UTGq_V8agqEqxwV8TLwWL07cUvDqfRg&oe=6281E8CB" class="d-block w-100" alt="...">
     <div class="carousel-caption d-none d-md-block"> 
+      
      
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script> 
